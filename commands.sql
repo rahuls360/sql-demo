@@ -10,4 +10,9 @@ CREATE TABLE users (
 )
 INSERT INTO users(username) VALUES('random_username');
 DELETE FROM users WHERE id=3;
-ALTER TABLE users MODIFY username VARCHAR(50) UNIQUE NOT NULL;
+-- add city column
+ALTER TABLE users ADD city VARCHAR(50) NOT NULL;
+-- update missing city field in rows
+UPDATE users SET city="Bangalore" WHERE id=2;
+-- get unique column values in table
+SELECT DISTINCT city from users;

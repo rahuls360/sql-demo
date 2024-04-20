@@ -8,3 +8,8 @@
 - CREATE X `IF NOT EXISTS` tableName
   - Use `IF NOT EXISTS` or `IF EXISTS` to have fault tolerent queries
 - in terminal end your SQL commands in a semicolon `;`
+
+## References
+
+- https://www.w3schools.com/sql/sql_distinct.asp
+- https://www.sqltutorial.org/sql-alter-table/
