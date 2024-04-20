@@ -8,3 +8,6 @@ CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL
 )
+INSERT INTO users(username) VALUES('random_username');
+DELETE FROM users WHERE id=3;
+ALTER TABLE users MODIFY username VARCHAR(50) UNIQUE NOT NULL;
