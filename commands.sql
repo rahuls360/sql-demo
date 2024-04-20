@@ -16,3 +16,9 @@ ALTER TABLE users ADD city VARCHAR(50) NOT NULL;
 UPDATE users SET city="Bangalore" WHERE id=2;
 -- get unique column values in table
 SELECT DISTINCT city from users;
+-- order by username field in descending order
+SELECT * FROM users ORDER BY username DESC;
+-- WHERE with multiple conditions (AND)
+SELECT * FROM users WHERE id > 0 AND city="Bangalore";
+-- filter by string (LIKE. % is for till the end. OR operator)
+SELECT * FROM users WHERE city="Bangalore" OR username LIKE 'r%';

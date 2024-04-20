@@ -13,3 +13,6 @@
 
 - https://www.w3schools.com/sql/sql_distinct.asp
 - https://www.sqltutorial.org/sql-alter-table/
+- https://www.youtube.com/watch?v=p3qvj9hO_Bo (not used)
+- https://sqlbolt.com/ (prefer this, as data is ready)
+- https://mystery.knightlab.com/ - Try this after becoming advanced
