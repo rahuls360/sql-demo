@@ -43,3 +43,9 @@ SELECT * FROM movies ORDER BY year DESC LIMIT 4;
 SELECT * FROM movies ORDER BY title ASC, year ASC LIMIT 5;
 -- show paginated response (OFFSET)
 SELECT * FROM movies ORDER BY title ASC, year ASC LIMIT 5 OFFSET 5;
+
+SELECT id, title, domestic_sales, international_sales FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id;
+
+SELECT id, title, domestic_sales, international_sales FROM movies INNER JOIN boxoffice ON movies.id = boxoffice.movie_id WHERE boxoffice.international_sales > boxoffice.domestic_sales
+SELECT DISTINCT building_name, role FROM buildings LEFT JOIN employees ON building_name = building;
+-- Continue here https://sqlbolt.com/lesson/select_queries_with_nulls
